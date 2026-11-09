@@ -1,0 +1,48 @@
+name: Portfolio checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: portfolio-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  python:
+    name: Python numerical and data checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Run numerical and ingestion tests
+        run: python -m unittest discover -s tests -p test_reconstructed.py -v
+      - name: Run reconstruction examples
+        run: |
+          python portfolio/multicriteria-analysis/analysis.py --output output/optimization
+          python portfolio/ias-threat-model/poisson_model.py --n 11 --output output/poisson.csv
+          python portfolio/opensearch-traffic/import_traffic.py portfolio/opensearch-traffic/sample.csv --dry-run output/traffic.ndjson
+
+  dotnet:
+    name: .NET build and access control
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+      - name: Build demo
+        run: dotnet build portfolio/access-control-demo/AccessControlDemo.csproj --configuration Debug
+      - name: Verify authentication and authorization over HTTP
+        run: python tests/check_access_control.py
