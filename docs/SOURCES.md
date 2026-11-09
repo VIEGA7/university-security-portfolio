@@ -11,6 +11,8 @@
 | Формат входных данных для MongoDB | [MITRE ATT&CK](https://attack.mitre.org/); сами внешние наборы данных не включены |
 | GitHub Actions для Python и .NET | [Python](https://docs.github.com/en/actions/tutorials/build-and-test-code/python), [.NET](https://docs.github.com/en/actions/tutorials/build-and-test-code/net) |
 | Исходные схемы и Excel МИАС | Хеши и пути исходных артефактов в [PROVENANCE.json](../portfolio/ias-threat-model/assets/PROVENANCE.json) |
+| Криптография, модели доступа, оптимизация и курсовая БД | [Происхождение учебных материалов](../portfolio/academic-foundations/PROVENANCE.json) |
+| Профессиональные направления программы МИРЭА | [Публикация самого университета](https://ok.ru/group/61619756466261/topic/157618568889173); сопоставление с работами — в [CAREER_MAP.md](CAREER_MAP.md) |
 
 Сторонние учебные примеры не заявляются как полностью самостоятельные разработки. Баннер в этом репозитории создан в SVG при оформлении портфолио; он не является официальной символикой университета.
 

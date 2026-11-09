@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-labelledby="title desc">
   <title id="title">Information Security · University Portfolio</title>
-  <desc id="desc">Threat modeling, access control and data analysis. RTU MIREA.</desc>
+  <desc id="desc">Systems analysis, data engineering and security monitoring. RTU MIREA, 10.05.04.</desc>
   <defs>
     <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101b31"/><stop offset="1" stop-color="#172e42"/></linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#e0f2ff" stroke-opacity=".05"/></pattern>
@@ -8,11 +8,11 @@
   <rect width="1280" height="340" rx="20" fill="url(#bg)"/>
   <rect width="1280" height="340" rx="20" fill="url(#grid)"/>
   <rect x="56" y="55" width="5" height="229" rx="2" fill="#69e3bc"/>
-  <text x="84" y="87" fill="#69e3bc" font-family="Segoe UI,Arial,sans-serif" font-size="15" letter-spacing="3">RTU MIREA / UNIVERSITY PORTFOLIO</text>
-  <text x="81" y="157" fill="#f3f7fc" font-family="Segoe UI,Arial,sans-serif" font-weight="700" font-size="52">Information Security</text>
-  <text x="84" y="200" fill="#b3c6da" font-family="Segoe UI,Arial,sans-serif" font-size="23">Threat modeling · Access control · Data analysis</text>
+  <text x="84" y="87" fill="#69e3bc" font-family="Segoe UI,Arial,sans-serif" font-size="15" letter-spacing="3">RTU MIREA / 10.05.04 / UNIVERSITY PORTFOLIO</text>
+  <text x="81" y="157" fill="#f3f7fc" font-family="Segoe UI,Arial,sans-serif" font-weight="700" font-size="48">Security &amp; Data Analytics</text>
+  <text x="84" y="200" fill="#b3c6da" font-family="Segoe UI,Arial,sans-serif" font-size="23">Systems analysis · Monitoring · Data engineering</text>
   <g fill="#69e3bc" fill-opacity=".12"><rect x="84" y="239" width="96" height="32" rx="16"/><rect x="193" y="239" width="96" height="32" rx="16"/><rect x="302" y="239" width="96" height="32" rx="16"/></g>
-  <g fill="#c7f8e8" font-family="Segoe UI,Arial,sans-serif" font-size="16"><text x="107" y="261">Python</text><text x="224" y="261">.NET</text><text x="333" y="261">SQL</text></g>
+  <g fill="#c7f8e8" font-family="Segoe UI,Arial,sans-serif" font-size="16"><text x="101" y="261">Systems</text><text x="224" y="261">Data</text><text x="321" y="261">Security</text></g>
   <g transform="translate(982 76)" fill="none" stroke="#69e3bc" stroke-width="2">
     <path d="M76 0 150 28v62c0 46-30 75-74 100C32 165 2 136 2 90V28Z" fill="#69e3bc" fill-opacity=".04"/>
     <circle cx="76" cy="67" r="15"/>
