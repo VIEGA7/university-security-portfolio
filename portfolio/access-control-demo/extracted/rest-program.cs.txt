@@ -1,0 +1,157 @@
+using System.Text.RegularExpressions;
+using System.Text.Json;
+
+// Начальные данные
+List<Person> users = new List<Person>
+{
+    new() { Id = Guid.NewGuid().ToString(), Name = "Tom", Age = 37 },
+    new() { Id = Guid.NewGuid().ToString(), Name = "Bob", Age = 41 },
+    new() { Id = Guid.NewGuid().ToString(), Name = "Sam", Age = 24 }
+};
+
+var builder = WebApplication.CreateBuilder(args);
+var app = builder.Build();
+
+app.Run(async (context) =>
+{
+    var response = context.Response;
+    var request = context.Request;
+    var path = request.Path;
+
+    // Регулярное выражение для проверки GUID
+    string expressionForGuid = @"/api/users/\w{8}-\w{4}-\w{4}-\w{4}-\w{12}$";
+
+    // GET /api/users - получение всех пользователей
+    if (path == "/api/users" && request.Method == "GET")
+    {
+        await GetAllPeople(response);
+    }
+    // GET /api/users/{id} - получение пользователя по id
+    else if (Regex.IsMatch(path, expressionForGuid) && request.Method == "GET")
+    {
+        string? id = path.Value?.Split("/")[3];
+        await GetPerson(id, response);
+    }
+    // POST /api/users - добавление пользователя
+    else if (path == "/api/users" && request.Method == "POST")
+    {
+        await CreatePerson(response, request);
+    }
+    // PUT /api/users - обновление пользователя
+    else if (path == "/api/users" && request.Method == "PUT")
+    {
+        await UpdatePerson(response, request);
+    }
+    // DELETE /api/users/{id} - удаление пользователя
+    else if (Regex.IsMatch(path, expressionForGuid) && request.Method == "DELETE")
+    {
+        string? id = path.Value?.Split("/")[3];
+        await DeletePerson(id, response);
+    }
+    else
+    {
+        response.ContentType = "text/html; charset=utf-8";
+        await response.SendFileAsync("html/index.html");
+    }
+});
+
+app.Run();
+
+// Получение всех пользователей
+async Task GetAllPeople(HttpResponse response)
+{
+    await response.WriteAsJsonAsync(users);
+}
+
+// Получение одного пользователя по id
+async Task GetPerson(string? id, HttpResponse response)
+{
+    Person? user = users.FirstOrDefault(u => u.Id == id);
+    if (user != null)
+        await response.WriteAsJsonAsync(user);
+    else
+    {
+        response.StatusCode = 404;
+        await response.WriteAsJsonAsync(new { message = "Пользователь не найден" });
+    }
+}
+
+// Удаление пользователя
+async Task DeletePerson(string? id, HttpResponse response)
+{
+    Person? user = users.FirstOrDefault(u => u.Id == id);
+    if (user != null)
+    {
+        users.Remove(user);
+        await response.WriteAsJsonAsync(user);
+    }
+    else
+    {
+        response.StatusCode = 404;
+        await response.WriteAsJsonAsync(new { message = "Пользователь не найден" });
+    }
+}
+
+// Создание пользователя
+async Task CreatePerson(HttpResponse response, HttpRequest request)
+{
+    try
+    {
+        var user = await request.ReadFromJsonAsync<Person>();
+        if (user != null)
+        {
+            user.Id = Guid.NewGuid().ToString();
+            users.Add(user);
+            await response.WriteAsJsonAsync(user);
+        }
+        else
+        {
+            throw new Exception("Некорректные данные");
+        }
+    }
+    catch (Exception)
+    {
+        response.StatusCode = 400;
+        await response.WriteAsJsonAsync(new { message = "Некорректные данные" });
+    }
+}
+
+// Обновление пользователя
+async Task UpdatePerson(HttpResponse response, HttpRequest request)
+{
+    try
+    {
+        Person? userData = await request.ReadFromJsonAsync<Person>();
+        if (userData != null)
+        {
+            var user = users.FirstOrDefault(u => u.Id == userData.Id);
+            if (user != null)
+            {
+                user.Age = userData.Age;
+                user.Name = userData.Name;
+                await response.WriteAsJsonAsync(user);
+            }
+            else
+            {
+                response.StatusCode = 404;
+                await response.WriteAsJsonAsync(new { message = "Пользователь не найден" });
+            }
+        }
+        else
+        {
+            throw new Exception("Некорректные данные");
+        }
+    }
+    catch (Exception)
+    {
+        response.StatusCode = 400;
+        await response.WriteAsJsonAsync(new { message = "Некорректные данные" });
+    }
+}
+
+public class Person
+{
+    public string Id { get; set; } = "";
+    public string Name { get; set; } = "";
+    public int Age { get; set; }
+}

@@ -1,0 +1,6 @@
+# Historical package versions are unknown. Install in a separate 64-bit Python environment.
+numpy
+scipy
+matplotlib
+pandas
+openpyxl

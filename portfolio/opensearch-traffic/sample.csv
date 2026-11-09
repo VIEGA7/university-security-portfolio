@@ -1,0 +1,4 @@
+frame.time_epoch;frame.number;ip.src;ip.dst;frame.protocols;http.host;tcp.srcport;tcp.dstport;udp.srcport;udp.dstport;tls.handshake.extensions_server_name;frame.len;dns.qry.name;http.request.method;http.response.code;tcp.flags;eth.src
+1760000000.123456;1;192.0.2.10;198.51.100.20;eth:ip:tcp:http;example.invalid;50000;80;;;;512;;GET;;0x0018;02:00:00:00:00:01
+1760000001.000000;2;192.0.2.10;192.0.2.53;eth:ip:udp:dns;;;;53000;53;;80;example.invalid;;;;02:00:00:00:00:01
+1760000002.500000;3;198.51.100.20;192.0.2.10;eth:ip:tcp;;80;50000;;;;64;;;;0x0004;02:00:00:00:00:02

@@ -1,0 +1,122 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="TzlOLshzQ3Q-5l9M-iK_">
+    <mxGraphModel dx="1178" dy="650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="02KH6v8idycSUcv8XpGB-49" edge="1" parent="1" source="02KH6v8idycSUcv8XpGB-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="450" />
+            </Array>
+            <mxPoint x="350" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-51" edge="1" parent="1" source="02KH6v8idycSUcv8XpGB-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="450" />
+            </Array>
+            <mxPoint x="520" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-45" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 16px;&quot;&gt;Разработка модели угроз информационной безопасности&lt;/font&gt;" vertex="1">
+          <mxGeometry height="130" width="270" x="290" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-47" parent="1" style="text;whiteSpace=wrap;html=1;fontColor=#FFFFFF;fontSize=12;" value="&lt;span style=&quot;font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; background-color: rgb(255, 255, 255); display: inline !important;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;color: rgb(0, 0, 0);&quot;&gt;Методика оценки угроз ФСТЭК России&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="210" x="130" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-50" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; background-color: rgb(255, 255, 255); display: inline !important;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot; face=&quot;Times New Roman&quot;&gt;Национальные стандарты&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="140" x="370" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-52" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; background-color: rgb(255, 255, 255); display: inline !important;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot; face=&quot;Times New Roman&quot;&gt;Архитектура и состав ИАС&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="150" x="90" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-53" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; background-color: rgb(255, 255, 255); display: inline !important;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot; face=&quot;Times New Roman&quot;&gt;Данные об уязвимостях&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="140" x="90" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-54" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; background-color: rgb(255, 255, 255); display: inline !important;&quot;&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;color: rgb(0, 0, 0);&quot;&gt;Банк данных угроз ФСТЭК (БДУ)&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="190" x="90" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-56" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.846;entryDx=0;entryDy=0;entryPerimeter=0;" target="02KH6v8idycSUcv8XpGB-45" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="90" y="560" as="sourcePoint" />
+            <mxPoint x="180" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-57" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.846;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="90" y="530.02" as="sourcePoint" />
+            <mxPoint x="290" y="530.02" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-58" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.846;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="90" y="500" as="sourcePoint" />
+            <mxPoint x="290" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-59" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Модель угроз ИБ&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="560" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-60" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Дерево угроз ИБ&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="560" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-61" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Логическая модель угроз&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="140" x="560" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-62" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Отчет о разработке модели&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="150" x="560" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-63" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="560" y="565" as="sourcePoint" />
+            <mxPoint x="730" y="565" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-64" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="560" y="535" as="sourcePoint" />
+            <mxPoint x="730" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-65" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="560" y="505" as="sourcePoint" />
+            <mxPoint x="730" y="505" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-66" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="560" y="475" as="sourcePoint" />
+            <mxPoint x="730" y="475" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-67" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Аналитик по ИБ&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="100" x="260" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-68" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font face=&quot;Times New Roman&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Средства моделирования&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="140" x="370" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-69" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="620" />
+            </Array>
+            <mxPoint x="510" y="670" as="sourcePoint" />
+            <mxPoint x="510" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="02KH6v8idycSUcv8XpGB-70" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="359.16999999999996" y="620" />
+            </Array>
+            <mxPoint x="359.16999999999996" y="670" as="sourcePoint" />
+            <mxPoint x="359.16999999999996" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

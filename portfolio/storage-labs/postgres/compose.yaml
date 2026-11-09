@@ -1,0 +1,21 @@
+name: portfolio-postgres
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: portfolio_lab
+      POSTGRES_USER: portfolio_user
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD locally}
+    ports: ["127.0.0.1:54310:5432"]
+    volumes: ["pg-data:/var/lib/postgresql/data"]
+  pgadmin:
+    image: dpage/pgadmin4:9
+    environment:
+      PGADMIN_DEFAULT_EMAIL: demo@example.invalid
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD:?Set PGADMIN_PASSWORD locally}
+    ports: ["127.0.0.1:8810:80"]
+    volumes: ["pgadmin-data:/var/lib/pgadmin"]
+    depends_on: [postgres]
+volumes:
+  pg-data:
+  pgadmin-data:

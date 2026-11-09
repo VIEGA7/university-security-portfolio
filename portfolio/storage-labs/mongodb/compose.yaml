@@ -1,0 +1,11 @@
+name: portfolio-mongodb
+services:
+  mongodb:
+    image: mongo:7.0
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: portfolio_admin
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD:?Set MONGO_PASSWORD locally}
+    ports: ["127.0.0.1:27010:27017"]
+    volumes: ["mongo-data:/data/db"]
+volumes:
+  mongo-data:

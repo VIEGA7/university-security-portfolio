@@ -1,0 +1,42 @@
+[
+  {
+    "file": "portfolio/multicriteria-analysis/extracted/kdz1.py",
+    "source": "3 Курс 1 и 2 семестр\\Практики по Серову\\KDZ_1.docx",
+    "paragraph_start": 137,
+    "paragraph_end_exclusive": null,
+    "status": "syntax valid; dependencies unavailable; not executed"
+  },
+  {
+    "file": "portfolio/multicriteria-analysis/extracted/kdz2.py",
+    "source": "3 Курс 1 и 2 семестр\\Практики по Серову\\KDZ_2.docx",
+    "paragraph_start": 161,
+    "paragraph_end_exclusive": null,
+    "status": "syntax valid; dependencies unavailable; not executed"
+  },
+  {
+    "file": "portfolio/multicriteria-analysis/extracted/kdz3.py",
+    "source": "3 Курс 1 и 2 семестр\\Практики по Серову\\KDZ_3.docx",
+    "paragraph_start": 94,
+    "paragraph_end_exclusive": null,
+    "status": "syntax valid; dependencies unavailable; not executed"
+  },
+  {
+    "file": "portfolio/multicriteria-analysis/extracted/kdz5_first_iteration.py",
+    "source": "3 Курс 1 и 2 семестр\\Практики по Серову\\KDZ_5.docx",
+    "paragraph_start": 161,
+    "paragraph_end_exclusive": 446,
+    "status": "syntax valid; dependencies unavailable; not executed"
+  },
+  {
+    "file": "portfolio/multicriteria-analysis/extracted/kdz5_full.py",
+    "source": "3 Курс 1 и 2 семестр\\Практики по Серову\\KDZ_5.docx",
+    "paragraph_start": 447,
+    "paragraph_end_exclusive": null,
+    "status": "syntax valid; dependencies unavailable; not executed"
+  },
+  {
+    "file": "portfolio/sql-practice/queries.sql",
+    "source": "3 Курс 1 и 2 семестр\\90 Заданий по базам данных\\Задачи.docx",
+    "status": "extracted; five corrections described in SQL README; database unavailable"
+  }
+]

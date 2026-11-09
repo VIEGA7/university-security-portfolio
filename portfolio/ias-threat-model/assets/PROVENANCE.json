@@ -1,0 +1,28 @@
+[
+  {
+    "file": "infrastructure.drawio",
+    "source": "3 Курс 1 и 2 семестр\\Практики по МИАС\\Практика №1- 2\\Схемы на DRAW.IO.drawio",
+    "sha256": "2dda2e7d7393cf949502fb43e4958b115b319264c72f453ba84640876c016241"
+  },
+  {
+    "file": "ias-architecture.drawio",
+    "source": "3 Курс 1 и 2 семестр\\Практики по МИАС\\Практика №3\\3 практос.drawio",
+    "sha256": "e1359532bc1ab469b864f68dc3b3818d58a4e88a22f6cde1a00059d5370ac7e6"
+  },
+  {
+    "file": "threat-tree-bdu.drawio",
+    "source": "3 Курс 1 и 2 семестр\\Практики по МИАС\\Практика №10-11\\Drevo_ugroz.drawio",
+    "sha256": "e14e9a4ba413336a2fe31c29b1cef5ac82ab89e5d5fca325b412d0bcf21f1588"
+  },
+  {
+    "file": "threat-tree-classifier.drawio",
+    "source": "3 Курс 1 и 2 семестр\\Практики по МИАС\\Практика №9\\Drevo_ugroz.drawio",
+    "sha256": "6fc172fb97623ad278f865c0cec1366ad1badfd8c2e9fa386d53086e4112ab4b"
+  },
+  {
+    "file": "expert-assessment.xlsx",
+    "source": "3 Курс 1 и 2 семестр\\Практики по МИАС\\Практика №12-13\\MIAS_12-13.xlsx",
+    "sha256": "0c48831c139da8ebca84ea6f372ac151aa2274c3ac735c53996fafe91b014c99",
+    "changes": "expert names and local absolute path removed; formulas preserved, not recalculated"
+  }
+]

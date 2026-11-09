@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Учебный контроль доступа</title><script src="/app.js" defer></script></head>
+<body>
+<h1>Контроль доступа</h1>
+<p>Учебный пример: reader просматривает записи, admin может добавлять и удалять их.</p>
+<form id="login">
+<label>Пользователь <input id="username" autocomplete="username" required maxlength="100"></label>
+<label>Пароль <input id="password" type="password" autocomplete="current-password" required maxlength="1024"></label>
+<button>Войти</button>
+</form>
+<p id="status" role="status"></p>
+<section id="workspace" hidden>
+<button id="logout">Выйти</button><button id="refresh">Обновить</button>
+<form id="create" hidden><label>Имя <input id="name" required maxlength="100"></label><label>Возраст <input id="age" type="number" min="0" max="130" required></label><button>Добавить</button></form>
+<ul id="users"></ul>
+</section>
+</body></html>

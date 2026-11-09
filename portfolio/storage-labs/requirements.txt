@@ -1,0 +1,5 @@
+# Required only for the matching subproject; not installed or runtime-tested here.
+pymongo>=4,<5
+minio>=7,<8
+# Spark 4.1.1 is the version visible in the surviving lab screenshots.
+pyspark==4.1.1

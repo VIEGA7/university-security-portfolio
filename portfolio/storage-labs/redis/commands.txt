@@ -1,0 +1,16 @@
+# Reconstructed basic CLI operations from storage lab 6.
+# Connect: docker compose exec -e REDISCLI_AUTH=<local-password> redis redis-cli
+# Use only a disposable local lab: these commands write keys prefixed portfolio:.
+SET portfolio:name demo
+GET portfolio:name
+EXPIRE portfolio:name 60
+TTL portfolio:name
+HSET portfolio:user:1 name Demo role reader
+HGETALL portfolio:user:1
+LPUSH portfolio:events login read logout
+LRANGE portfolio:events 0 -1
+SADD portfolio:roles reader admin
+SMEMBERS portfolio:roles
+ZADD portfolio:risks 0.3 low 0.9 high
+ZRANGE portfolio:risks 0 -1 WITHSCORES
+DEL portfolio:name portfolio:user:1 portfolio:events portfolio:roles portfolio:risks

@@ -1,0 +1,9 @@
+name: portfolio-http
+services:
+  nginx:
+    image: nginx:stable-alpine
+    ports: ["127.0.0.1:31337:8080"]
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./www:/usr/share/nginx/html:ro
+      - ./.htpasswd:/etc/nginx/.htpasswd:ro

@@ -1,0 +1,20 @@
+# Local university archive: contains personal details and historical screenshots.
+/2 Курс 2 семестр/
+/3 Курс 1 и 2 семестр/
+/Новая папка/
+/review-work/
+/.venv/
+**/__pycache__/
+**/bin/
+**/obj/
+**/.env
+**/.env.*
+!**/.env.example
+**/output/
+**/data/
+*.user
+*.suo
+**/.htpasswd
+/github-ready/
+/publish-dist/
+/output/
